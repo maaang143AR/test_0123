@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { number } from "zod";
 
 type CustomerProps = {
   name: string;
@@ -8,7 +9,7 @@ type CustomerProps = {
 
 const Customer = (props: CustomerProps) => {
 const[isAdmin,setIsAdmin] = useState(props.admin);
-
+const newErr = 5;
   return (
     <>
     
